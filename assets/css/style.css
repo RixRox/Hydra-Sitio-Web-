@@ -66,7 +66,7 @@
 
 body {
     font-size: 16px;
-    color: #0c2957;
+    color: #000;
     line-height: 1.7em;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -2997,7 +2997,7 @@ img {
 }
 
 .banner-section.style-three .banner-carousel .content-box .text {
-    color: #0c2957;
+    color: #b9a159;
     font-size: 22px;
     font-weight: 500;
 }
@@ -3042,12 +3042,12 @@ img {
     font-size: 72px;
     text-transform: capitalize;
     padding-bottom: 0;
-    color: #0c2957;
+    color: #b9a159;
     font-weight: 800;
 }
 
 .banner-section.style-four .banner-carousel .content-box .text {
-    color: #0c2957;
+    color: #b9a159;
     font-size: 20px;
     font-weight: 500;
     padding-left: 100px;
@@ -3082,7 +3082,7 @@ img {
 .banner-section.style-four .btn-style-one .btn-title {
     padding: 15px 42px;
     border-radius: 30px;
-    color: #0c2957;
+    color: #b9a159;
     background-color: #ebf0f9;
     text-transform: uppercase;
 }
@@ -3148,7 +3148,7 @@ img {
 .banner-section-two {
     position: relative;
     padding: 300px 0;
-    background: #0f3186;
+    background: #b9a159;
     z-index: 1;
 }
 
@@ -7601,9 +7601,6 @@ img {
     right: 0;
     bottom: 0;
     top: 0;
-    background-image: -moz-linear-gradient( 90deg, rgb(25,29,42) 0%, rgb(48,54,77) 75%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(25,29,42) 0%, rgb(48,54,77) 75%);
-    background-image: -ms-linear-gradient( 90deg, rgb(25,29,42) 0%, rgb(48,54,77) 75%);
     opacity: 0;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -13451,15 +13448,15 @@ img {
     font-size: 60px;
     padding-right: 20px;
     line-height: 60px;
-    color: #a3b4ce;
-    border-right: 1px solid #e1e5e9;
+    color: #000;
+    border-right: 1px solid #000;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
 }
 
 .style-two .service-block-five .icon {
-    color: #0c2957;
+    color: #000;
 }
 
 .style-two .service-block-five .inner-box:hover .icon {
