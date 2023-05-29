@@ -203,6 +203,10 @@ img {
     height: auto;
 }
 
+img-header {
+    
+}
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -1223,7 +1227,7 @@ img {
 }
 
 .main-header.header-style-one .sticky-header {
-    background: #b9a159;
+    background: #fff;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
     -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
     -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
@@ -1259,7 +1263,7 @@ img {
 }
 
 .main-header.header-style-two .sticky-header {
-    background: #b9a159;
+    background: #fff;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
     -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
     -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
