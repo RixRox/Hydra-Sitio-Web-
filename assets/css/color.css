@@ -276,7 +276,7 @@
 .sec-title h4,
 a:hover,
 a {
-	color: #fd4a36;
+	color: #000;
 }
 
 /* Border Color */
@@ -317,12 +317,12 @@ a {
 .testimonial-section-eleven .client-block:hover .thumb:before,
 
 .about-section .logo {
-	border-color: #fd4a36;
+	border-color: #574202ab;
 }
 
 .accordion-box.style-two .block .acc-btn.active,
 .accordion-box.style-three .block .acc-btn.active {
-	border-left-color: #fd4a36;
+	border-left-color: #574202ab;
 }
 
 /* Gradient Color */
