@@ -131,7 +131,7 @@
 .banner-section .owl-theme .owl-nav button:hover:before,
 .search-popup .search-form fieldset input[type="submit"],
 .btn-style-two .btn-title:before {
-    background-color: #fd4a36;
+    background-color: #c3a253;
 }
 
 /* Color */
@@ -332,9 +332,9 @@ a {
 .cta-section-two h2 span,
 .cta-section-two .contact-info .icon,
 .btn-style-four {
-  background-image: -moz-linear-gradient( 0deg, rgb(253,74,54) 16%, rgb(255,131,0) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(253,74,54) 16%, rgb(255,131,0) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(253,74,54) 16%, rgb(255,131,0) 100%);
+  background-image: -moz-linear-gradient( 0deg, #c3a253 16%, #7f5d10 100%);
+  background-image: -webkit-linear-gradient( 0deg, #c3a253 16%, #7f5d10 100%);
+  background-image: -ms-linear-gradient( 0deg, #c3a253 16%, #7f5d10 100%);
 }
 
 

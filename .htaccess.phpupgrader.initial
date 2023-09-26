@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^hydraconsultores\.asglasociados\.com\.mx$
+RewriteRule ^/?$ "https\:\/\/hydraconsultores\.com\.mx\/" [R=301,L]
+

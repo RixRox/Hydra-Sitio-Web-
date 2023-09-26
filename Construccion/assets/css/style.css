@@ -1,0 +1,568 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+.scroll-down a {
+  display: block;
+  color: #C59884;
+  transition: color 0.3s ease-in-out;
+}
+
+.scroll-down a:hover {
+  color: #806458; /* Color diferente al hacer hover */
+}
+
+h1, h2{
+  font-family: "Rockwell";  
+}
+
+.subtitle{
+  font-family: "Rockwell";
+  color: #C59884;
+  font-weight: bold;
+  font-size: 52px;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .company-name {
+    font-size: 28px;
+  }
+
+  .company-description {
+    font-size: 16px;
+  }
+
+  .scroll-down a {
+    font-size: 20px;
+  }
+
+  .carousel-icons i{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-name {
+    font-size: 24px;
+  }
+
+  .company-description {
+    font-size: 14px;
+  }
+
+  .scroll-down a {
+    font-size: 18px;
+  }
+
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.column-left {
+  position: relative;
+}
+  
+  .logo-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+  .company-name {
+    font-family: "Rockwell";
+    font-size: 80px;
+    font-weight: bold;
+    color: #C59884;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+  
+  .company-description {
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    color: #C59884;
+    margin-top: 20px;
+    width: 450px;
+  }
+  
+  .scroll-down {
+    font-size: 36px;
+    margin-top: 30px;
+    text-align: center;
+    color: #C59884;
+  }
+  
+  .column-right {
+    flex: 1;
+  }
+  
+  .carousel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-icons {
+    position: relative;
+    top: -80px;
+    left: 0%;
+    text-align: center;
+  }
+  
+  .carousel-icons i {
+    font-size: 24px;
+    color: #C59884;
+    margin: 10px;
+  }
+
+ 
+
+  #seccion-2, #seccion-1 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }  
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .left-column img {
+    width: 90%;
+    height: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .right-column img {
+    width: 90%;
+    height: 90%;
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right-column h2 {
+    margin-bottom: 25px;
+  }
+
+  
+  #seccion-3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 5%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .section3 {
+      grid-template-columns: 1fr 5px 1fr;
+    }
+  }
+
+  .title-name {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #C59884;
+    font-weight: bold;
+  }
+  
+  
+  .middle-line {
+    width: 100%;
+    height: 560px;
+    background-color: #C59884;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .left-column .vertical-image {
+    position: absolute;
+    width: 20%;
+    height: 75%;
+    right: 51%;
+    opacity: 0.4;
+  }
+
+  .right-column .vertical-image {
+    position: absolute;
+    width: 20%;
+    height: 75%;
+    left: 51%;
+    opacity: 0.4;
+  }
+  
+  
+  .left-column .horizontal-image {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+    margin-left: -30%;
+  }
+  
+  .right-column .horizontal-image {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+    margin-right: -30%;
+  }
+
+  .left-column .horizontal-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-column .horizontal-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .p-left {
+    text-align: left;
+    font-size: 20px;
+    margin-right: 20%;
+  }
+
+  .p-right {
+    text-align: right;
+    font-size: 20px;
+    margin-left: 20%;
+  }
+  
+  .logo-distribuidores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .small-logo {
+    width: 50%;
+    height: auto;
+  }
+
+  /* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    text-align: center;
+  }
+
+  .horizontal-image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .horizontal-image {
+    width: 70%;
+    height: auto;
+  }
+
+  .p-left,
+  .p-right {
+    text-align: center;
+  }
+
+  .logo-distribuidores {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .small-logo {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title-name {
+    font-size: 24px;
+  }
+
+  .p-left,
+  .p-right {
+    font-size: 14px;
+  }
+}
+
+#seccion-4 {
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.left-title, .right-title {
+  flex: 1;
+  text-align: center;
+}
+.title-text {
+  font-family: "Rockwell";
+  margin: 0;
+  font-size: 80px;
+  font-weight: bold;
+  color: #C59884;
+}
+
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#seccion-5 {
+  background-color: #F5F5F5;
+  padding: 5%;
+}
+
+.section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact-title {
+  padding: 10px 0;
+  font-size: 32px;
+  text-align: left;
+  color: #C59884;
+  font-weight: bold;
+}
+
+.map-image {
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: -50;
+}
+
+.image-container {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  height: auto;
+}
+
+.small-image {
+  width: 50px;
+  height: auto;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-title {
+  font-family: "Rockwell";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #C59884;
+}
+
+.form-field-inline {
+  display: flex;
+  gap: 10px;
+}
+
+.form-field-half {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #DBBEB2;
+}
+
+textarea.form-input {
+  resize: vertical;
+}
+
+.form-button {
+  text-align: right;
+}
+
+.form-button button {
+  padding: 10px 20px;
+  background-color: #DBBEB2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-button button:hover {
+  background-color: #C6AEA0;
+}
+
+footer {
+  background-color: #DBBEB2;
+  padding: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+
+.center-column {
+  display: grid;
+  place-items: center;
+}
+
+.center-column .footer-image {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: "Rockwell";
+  color: #FCEFDB;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-us {
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Rockwell";
+  color: #FCEFDB;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* El CSS anterior se mantiene igual */
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 25px;
+  color: #FFF;
+}
+

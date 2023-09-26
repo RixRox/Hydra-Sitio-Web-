@@ -1189,7 +1189,8 @@ readers do not read off random characters that represent icons */
   content: "\f7ee"; }
 
 .fa-check:before {
-  content: "\f00c"; }
+  content: "\f00c";
+  color: #c3a253; } 
 
 .fa-check-circle:before {
   content: "\f058"; }
