@@ -43,7 +43,7 @@
                 <div class="inner-container clearfix">
                     <!--Logo-->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" style="width: 210px;" alt=""></a></div>
                     </div>
                     <!--Nav Box-->
                     <div class="nav-outer clearfix">
@@ -86,7 +86,7 @@
                     <div class="inner-container clearfix">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" style="width: 210px;" alt=""></a></div>
                         </div>
                         <!--Nav Box-->
                         <div class="nav-outer clearfix">
@@ -131,7 +131,7 @@
                     <div class="inner-container clearfix">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" style="width: 210px;" alt=""></a></div>
                         </div>
                         <!--Nav Box-->
                         <div class="nav-outer clearfix">
@@ -186,7 +186,7 @@
     <section class="hidden-sidebar close-sidebar">
         <div class="wrapper-box">
             <div class="hidden-sidebar-close"><span class="flaticon-remove"></span></div>
-            <div class="logo"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+            <div class="logo"><a href="#"><img src="assets/images/logo.png" style="width: 210px;" alt=""></a></div>
             <div class="content">
                 <div class="about-widget-two sidebar-widget">
                     <h3>Smart Business Consultancy <br>in New Milton</h3>
@@ -277,51 +277,90 @@
                                     <span class="left"></span>
                                     <span class="right"></span>
                                 </div>
-                               
                             </div>
                             <div class="author-box">
-                               
                                 <h4 style="color: #fff;">¿Tienes una pregunta?</h4>
                                 <div class="phone-numer"><a href="https://wa.me/5579236608" style="color: #c1a051;"><i class="flaticon-phone" style="color: #c1a051;"></i>  (55) 7923-6608</a></li></div>
                             </div>
-
                         </div> 
                     </div>                                               
                 </div>
                 <div class="col-lg-6 right-column" style="background-image: url(assets/images/background/bg-23.jpg);">
                     <div class="inner-container">
                         <div class="contact-form-box">
-                            <form action="https://formsubmit.co/92967b3da41b53d2be455d8390ff474b " method="POST" class="contact-form">
+                            <form id="form" class="contact-form">
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" name="Nombre" placeholder="Nombre" required="">
+                                        <input type="text" name="name" id="name" placeholder="Nombre" required="">
                                     </div>
                                     
                                     <div class="col-md-6 form-group">
-                                        <input type="email" name="Correo" placeholder="Correo" required="">
+                                        <input type="email" name="email" id="email" placeholder="Correo" required="">
                                     </div>
-
+                            
                                     <div class="col-md-6 form-group">
-                                        <input type="text" name="Telefono" placeholder="Telefono" required="">
+                                        <input type="text" name="phone" id="phone" placeholder="Telefono" maxlength="10" required="">
                                     </div>
-
+                            
                                     <div class="col-md-12 form-group">
-                                        <input type="text" name="Asunto" placeholder="Asunto" required="">
+                                        <input type="text" name="subject" id="subject" placeholder="Asunto" required="">
                                     </div>
-
+                            
                                     <div class="col-md-12 form-group">
-                                        <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+                                        <textarea name="message" id="message" placeholder="Mensaje"></textarea>
                                     </div>
-            
+                            
                                     <div class="col-md-12 form-group">
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Enviar</span></button>
+                                        <button class="theme-btn btn-style-one" type="submit" id="button" value="Enviar" name="submit-form">
+                                            <span class="btn-title">Enviar</span>
+                                        </button>
                                     </div>
-
-                                    
                                     <input type="hidden" name="_next" value="https://www.hydraconsultores.com.mx">
                                     <input type="hidden" name="_captcha" value="false">
                                 </div>
                             </form>
+                            
+                            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                            
+                            <script type="text/javascript">
+                                emailjs.init('ltMf3xJo8bZIuRAjx')
+                            
+                                const btn = document.getElementById('button');
+                            
+                                document.getElementById('form').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+                            
+                                    btn.value = 'Enviando...';
+                            
+                                    const serviceID = 'default_service';
+                                    const templateID = 'template_6m9dimk';
+                            
+                                    emailjs.sendForm(serviceID, templateID, this)
+                                        .then(() => {
+                                            btn.value = 'Enviado';
+                            
+                                            Swal.fire({
+                                                title: '¡Correo enviado exitosamente!',
+                                                text: 'Nos comunicaremos con usted a la brevedad.',
+                                                icon: 'success',
+                                                confirmButtonText: 'OK'
+                                            });
+                                        }, (err) => {
+                                            btn.value = 'Enviar';
+                            
+                                            Swal.fire({
+                                                title: 'Error al enviar',
+                                                text: 'Hubo un problema al enviar su correo. Inténtelo de nuevo más tarde.',
+                                                icon: 'error',
+                                                confirmButtonText: 'OK'
+                                            });
+                                        });
+                                });
+                            </script>
+                            
+
+
                         </div>                            
                     </div>                        
                 </div>
